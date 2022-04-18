@@ -4,4 +4,11 @@ import './index.css';
 import App from "./App";
 
 
-ReactDOM.render(<App authorized={true}/>,document.getElementById("root"));
+const [, , light] = [
+  "boots",
+  "tent",
+  "headlamp"
+];
+console.log(light);
+
+ReactDOM.render(<App />,document.getElementById("root"));

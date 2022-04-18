@@ -10,9 +10,10 @@ function RegularComponent(){
   return <h1>Everyone can see this component</h1>;
 }
 function App(props) {
+  console.log(props);
   return (
     <>
-      {props}.authorized ? <SecretComponent /> : <RegularComponent />}
+      {props.authorized ? (<SecretComponent />) : (<RegularComponent />)}
     </>
   );
 }
